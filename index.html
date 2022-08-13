@@ -414,18 +414,20 @@
           </ul>
         </div>
 
-
-      <div class="mailing-list">
-        <form  class="mailing-form"> 
-          <label for="mail"
-            >Підпишись на розсилку</label>
+        <div class="mailing-list">
+          <form class="mailing-form">
+            <label for="mail">Підпишись на розсилку</label>
             <div class="mailing">
-            <input class="mailing-input" type="mail" id="mail" placeholder="Email"/>
+              <input class="mailing-input" type="Email" id="Email" placeholder="Email" />
+
+              <button class="btn-mailing" type="submit">
+                Підписатись
+                <svg class="icons-mailing">
+                  <use href="./images/icons/symbol6.svg#icon-icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
           </form>
-        <button class="btn-mailing" type="submit">Підписатись
-          <svg class="icons-mailing" > 
-          <use href="./images/icons/symbol6.svg#icon-icon-telegram" width="24" heigth="24"></use>
-        </svg></button>
         </div>
       </div>
 
@@ -440,81 +442,68 @@
 
           <form>
             <div class="form-group">
-              <label for="name" class="form-label">Імя
-              <input class="form-input" type="text" name="user-name" id="name" />
-              <svg class="icon" width="18" heigth="18">
-                  <use href="./images/icons/icon-person.svg#icon-person" ></use>
+              <label for="name" class="form-label"
+                >Імя
+                <input class="form-input" type="text" name="user-name" id="name" />
+                <svg class="icon">
+                  <use href="./images/icons/icon-person.svg#icon-person"></use>
                 </svg>
               </label>
             </div>
 
             <div class="form-group">
-              <label for="tel">Телефон
-              <input class="form-input" type="tel" name="user-tel" id="tel" />
+              <label for="tel"
+                >Телефон
+                <input class="form-input" type="tel" name="user-tel" id="tel" />
 
                 <svg class="icon">
                   <use href="./images/icons/icon-form.svg#icon-phone"></use>
                 </svg>
-
-              </label>
               </label>
             </div>
 
             <div class="form-group">
-              <label for="mail">Пошта
-              <input class="form-input" type="mail" name="user-mail" id="mail" />
+              <label for="email"
+                >Пошта
+                <input class="form-input" type="email" name="user-mail" id="email" />
 
                 <svg class="icon">
-                  <use href="./images/icons/icon-form.svg#icon-email" width="18" heigth="18"></use>
+                  <use href="./images/icons/icon-form.svg#icon-email"></use>
                 </svg>
-
               </label>
             </div>
 
             <div class="form-area">
               <label for="user-text" class="area-text">Коментар</label>
-              <textarea 
-              name="user-text"
-              id="user-text" 
-              placeholder="Введіть текст"
-              class="form-textarea"
+              <textarea
+                name="user-text"
+                id="user-text"
+                placeholder="Введіть текст"
+                class="form-textarea"
               ></textarea>
             </div>
-               
-          <div class="form-check">
-            <input 
-            type="checkbox" 
-            name="policy" 
-            id="policy" 
-            class="modal-check visually-hidden">
-            <label for="policy" class="checkbox-text">
-              <span class="check">
-                <svg class="check-icon" width="11" heigth="8">
-                <use href="./images/icons/icon-forms.svg#icon-Vector-8"></use>
-              </svg>
-              </span>
-           Погоджуюся з розсилкою та приймаю<a href="" class="check-link">  Умови договору</a> 
 
-            </label>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                name="policy"
+                id="policy"
+                class="modal-check visually-hidden"
+              />
+              <label for="policy" class="checkbox-text">
+                <span class="check">
+                  <svg class="check-icon">
+                    <use href="./images/icons/icon-forms.svg#icon-Vector-8"></use>
+                  </svg>
+                </span>
+                Погоджуюся з розсилкою та приймаю<a href="" class="check-link"> Умови договору</a>
+              </label>
+            </div>
 
-          </div>
-
-
-            
-          
             <button class="form-btn" type="submit">Відправити</button>
-              
-
-
-              
-
-              
           </form>
         </div>
       </div>
-
-          
-
 
       <script src="./js/modal.js"></script>
     </footer>
