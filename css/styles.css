@@ -867,10 +867,10 @@ address {
   width: 11px;
   height: 11px;
 }
-
-.modal-btn:focus-within {
-  border: 1px solid var(--accent);
+.modal-btn:hover,
+.modal-btn:focus {
   fill: var(--accent);
+  border: 1px solid var(--accent);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1018,8 +1018,7 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-.check-link {
+.form-check .check-link {
   color: var(--accent);
   margin-left: 3px;
 }
@@ -1029,12 +1028,16 @@ address {
   width: 11px;
   height: 18px;
 }
+
 .check-icon {
   fill: var(--background-color);
 }
 .modal-check:checked + .checkbox-text .check {
   background-color: var(--accent);
   border: none;
+}
+.modal-check:focus + .checkbox-text .check {
+  border-color: var(--accent);
 }
 
 /*-----------------MAILING--------------*/
